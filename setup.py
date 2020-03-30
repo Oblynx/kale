@@ -54,7 +54,7 @@ setup(
         'jupyter-core >= 4.6.0',
         'nbconvert >= 5.6.1',
         'ipykernel >= 5.1.4',
-        'kfp-server-api == 0.1.18.3',
+        'kfp-server-api >= 0.1.18',
         'packaging > 20'
     ],
     extras_require={
