@@ -57,6 +57,7 @@ def upload_pipeline(request, pipeline_package_path, pipeline_metadata,
     client = _get_client()
     pipeline_name = pipeline_metadata["pipeline_name"]
     try:
+        request.log.info(">>> HELLO <<<")
         pipeline = client.upload_pipeline(pipeline_package_path, pipeline_name)
         return {"already_exists": False,
                 "pipeline": {"id": pipeline.id, "name": pipeline.name}}
